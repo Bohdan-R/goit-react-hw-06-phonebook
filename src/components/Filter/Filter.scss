@@ -1,0 +1,21 @@
+@import '../../styles/shared.scss';
+
+.find-form {
+    margin-bottom: 4px;
+}
+
+.find-form__input {
+    margin-bottom: 20px;
+    margin-left: 15px;
+    padding: 7px 10px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+
+    transition: border 250ms $timing-function;
+
+    &:focus {
+        border: 1px solid #2196F3;
+    }
+}

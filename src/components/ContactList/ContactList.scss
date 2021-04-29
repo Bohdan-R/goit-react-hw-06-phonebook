@@ -1,0 +1,58 @@
+@import '../../styles/shared.scss';
+
+.contact {
+    margin: 0 auto;
+}
+
+.contact__list {
+    @extend %list;
+    width: 450px;
+}
+
+.contact__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 8px 20px;
+
+    font-size: 16px;
+
+    border: 1px solid rgba(0, 0, 0, .3);
+
+    &:not(:last-child) {
+        border-bottom: none;
+    }
+
+    &:first-child {
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+
+    &:last-child {
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    &:nth-child(2n) {
+        background-color: #F2F2F2;
+    }
+}
+
+.contact__btn {
+    @extend %button;
+    padding: 8px 15px;
+
+    border-radius: 4px;
+    background-color: #F78181;
+
+    color: #ffffff;
+    font-size: 14px;
+
+    transition: 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+        background-color: #DF0101;
+    }
+}
